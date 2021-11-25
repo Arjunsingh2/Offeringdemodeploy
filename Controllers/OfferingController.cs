@@ -38,7 +38,11 @@ namespace IPTreatmentOffering.Controllers
         public IActionResult GetSpecialist()
         {
 
-            return Ok(context.Specialists.ToList());
+           // return Ok(context.Specialists.ToList());
+           List<string> a = new List<string>(2);  
+            a.Add("Mahesh Chand");  
+            a.Add("Chris Love");  
+            return Ok(a);
         }
 
         [HttpGet]
